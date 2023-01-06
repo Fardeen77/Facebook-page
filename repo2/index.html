@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fb Front Page</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        background-color: rgb(68, 97, 239);
+        height: 90px;
+      }
+      #box1 {
+        display: inline-block;
+        position: relative;
+        color: whitesmoke;
+        top: 30px;
+        left: 90px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      #box2 {
+        display: inline-block;
+        position: absolute;
+        left: 700px;
+        top: 20px;
+        color: whitesmoke;
+      }
+      input {
+        border-radius: 3px;
+        padding: 5px;
+      }
+      #box3 {
+        display: inline-block;
+        position: absolute;
+        left: 900px;
+        top: 20px;
+        color: whitesmoke;
+      }
+      #box4 {
+        display: inline-block;
+        background-color: blue;
+        position: absolute;
+        left: 1100px;
+        top: 38px;
+        padding: 4px;
+        border-radius: 3px;
+        border: 1px solid black;
+        color: whitesmoke;
+      }
+      #box4:hover {
+        background-color: hotpink;
+      }
+      body {
+        background-color: rgb(205, 236, 246);
+      }
+      .leftcontainer {
+        width: 700px;
+        height: 600px;
+        display: inline-block;
+        float: left;
+      }
+      .innerleftcontainer {
+        font-size: 24px;
+        width: 500px;
+        margin-top: 25px;
+        margin-left: 89px;
+        color: blue;
+        font-weight: bold;
+      }
+      .innerimagecontainer {
+        padding-left: 87px;
+      }
+      #account {
+        display: inline-block;
+        position: absolute;
+        left: 900px;
+        top: 110px;
+      }
+      p {
+        position: absolute;
+        left: 902px;
+        top: 160px;
+      }
+      #tablecontent {
+        position: absolute;
+        left: 900px;
+        top: 200px;
+      }
+      input {
+        padding: 8px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+      td {
+        padding-bottom: 10px;
+      }
+      p#birthday {
+        position: absolute;
+        left: 903px;
+        top: 391px;
+        font-size: 110%;
+      }
+      span {
+        font-size: 13px;
+        display: inline-block;
+        margin-left: 8px;
+        color: blue;
+      }
+      .daymonthyear {
+        position: absolute;
+        left: 902px;
+        top: 430px;
+      }
+      #genderbox {
+        position: absolute;
+        left: 902px;
+        top: 457px;
+      }
+      #shortinfo {
+        position: absolute;
+        width: 34%;
+        left: 902px;
+        top: 485px;
+      }
+      span.swords {
+        display: inline-block;
+        margin-left: 3px;
+        font-size: 102%;
+      }
+      #submitbutton {
+        position: absolute;
+        left: 902px;
+        top: 540px;
+      }
+      .button {
+        padding: 10px 15px;
+        background: rgb(90, 171, 10);
+        color: white;
+        font-weight: bolder;
+        font-size: 16px;
+      }
+      .button:hover {
+        background-color: hotpink;
+      }
+      div#first {
+        position: absolute;
+        left: 902px;
+        top: 590px;
+      }
+      span#ll {
+        margin-left: 0;
+        font-size: 102%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="box1">Facebook</div>
+      <div id="box2">
+        <form>
+          <label for="username">Email or Phone</label><br />
+          <input type="text" id="username" />
+        </form>
+      </div>
+      <div id="box3">
+        <form>
+          <label for="userpassword">Password</label><br />
+          <input type="password" id="userpassword" /><br />
+          Forgotten account?
+        </form>
+      </div>
+      <div id="box4">Log In</div>
+    </header>
+    <main>
+      <div class="leftcontainer">
+        <div class="innerleftcontainer">
+          Facebook helps you connect and share with the people in your life.
+        </div>
+        <div class="innerimagecontainer">
+          <img src="/media/images/fbimage.jpg" alt="fbimage" />
+        </div>
+      </div>
+      <div class="rightcontainer">
+        <div id="account"><h1>Create an Account</h1></div>
+        <p>It's free and always will be.</p>
+        <div id="tablecontent">
+          <table>
+            <tr>
+              <td>
+                <input type="text" placeholder="First Name" />
+              </td>
+              <td><input type="text" placeholder="Surname" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="text"
+                  placeholder="Mobile number or email address"
+                  size="48"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="text"
+                  placeholder="Re-Mobile number or email address"
+                  size="48"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="text" placeholder="New password" size="48" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p id="birthday">Birthday</p>
+        <div class="daymonthyear">
+          <select name="date" id="time">
+            <option value="day">Day</option>
+          </select>
+          <select name="date" id="time">
+            <option value="month">Month</option>
+          </select>
+          <select name="date" id="time">
+            <option value="year">Year</option>
+          </select>
+          <span>Why do i need to provide my date of birth?</span>
+        </div>
+        <div id="genderbox">
+          <input type="radio" />Female &nbsp;<input type="radio" />Male &nbsp;
+          <input type="radio" />Other
+        </div>
+        <div id="shortinfo">
+          By clicking Create an account, you agree to our
+          <span class="swords">Terms</span> and that you have read our
+          <span class="swords">Data Policy</span> , including our
+          <span class="swords">Cookie Use.</span>
+        </div>
+        <div id="submitbutton">
+          <input type="button" class="button" value="Create an Account" />
+        </div>
+        <div id="first">
+          <span id="ll">Create a Page</span> for a celebrity,band or business.
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
